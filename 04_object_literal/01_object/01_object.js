@@ -19,10 +19,10 @@ property 값이 함수일 경우 method라고 부른다
 */
 
 // 객체 리터럴 객체 생성 방식
-var student ={
-    name : '유관순',
-    age : 16,
-    getInfo : function(){
+var student = {
+    name: '유관순',
+    age: 16,
+    getInfo: function () {
         return `${this.name}(은)는 ${this.age}세 입니다`;
     }
 }

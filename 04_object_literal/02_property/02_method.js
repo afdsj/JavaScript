@@ -4,8 +4,8 @@
 */
 
 var dog = {
-    name : '단비',
-    eat : function(food){
+    name: '단비',
+    eat: function (food) {
         console.log(`${this.name}(은)는 ${food}를 맛있게 먹어용`);
     }
 }
