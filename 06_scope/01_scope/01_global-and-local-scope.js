@@ -30,23 +30,24 @@ outer();
 
 console.log(x);
 
-// 프로그램 동작 시
+/* 프로그램 동작 시
 // 선언부
-// var x;
-// var y;
-// var outer = function(){
-//     var z;
-//     var inner = function(){
-//         var x;
-//         x = "inner's local x"; // 할당 됌
-//         console.log(x);
-//         console.log(y); // undifined가 나와야 되는거 아닌가?하는 의문
-//         console.log(z);
-//     }
-//     z = "outer's local z";
-// }
-// x = "global x";
-// y = "global y";
+var x;
+var y;
+var outer = function(){
+    var z;
+    var inner = function(){
+        var x;
+        x = "inner's local x"; // 할당 됌
+        console.log(x);
+        console.log(y); 
+        console.log(z);
+    }
+    z = "outer's local z";
+}
+x = "global x";
+y = "global y";
 
-// // 실행부
+// 실행부
 // outer(); 
+*/

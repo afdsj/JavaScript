@@ -6,28 +6,29 @@
 let mes = "안녕";
 // let mes = "중복이 안되네";
 
-// 02_ 블록 레벨 스코프 지원
+/* 02_ 블록 레벨 스코프 지원 
+같은 스코프 내의 생명주기가 다르다 */
 let i = 0;
 for (let i = 0; i < 10; i++) { }
-console.log(i);
+console.log(i); // 0
 
+// console.log(y);
 let y = "1";
 if(true){
-    // 만약 호이스팅이 안된 경우
-    // console.log(y); // 예상 : 1, 현실 : error
-    let y="2";
-    console.log(y); // 2
+    // let y="2";
+    console.log(y); // 1
 }
 
-// 엔진 동작시
-// let y;
-// y = '1';
+/* 엔진 동작시
+let y;
+y = '1';
 
-// if(true){
-//     let y; // 마치 호이스팅이 안된 것 처럼 만든다
-//     console.log(y);
-//     y = "2";
-// }
+if(true){
+    let y; // 마치 호이스팅이 안된 것 처럼 만든다
+    console.log(y);
+    y = "2";
+}
+*/
 
 let m;
 console.log(m);

@@ -4,36 +4,41 @@
 */
 
 var message = "안녕하세요";
-console.log(message);
+console.log(message); // 안녕하세요
 var message = "중복 선언에도 문제가 없지";
-console.log(message);
+console.log(message); // 중복 선언에도 문제가 없지
 var message;
-console.log(message);
+console.log(message); //중복 선언에도 문제가 없지
 
+/* 프로그램 동작 시
 // 엔진이 해석을 다음과 같이 한다
-// var message;
-// var message;
-// var message;
+var message;
+var message;
+var message;
 
-// message = "안녕하세요";
-// console.log(message);
-// message = "중복 선언에도 문제가 없지";
-// console.log(message);
-// console.log(message);
+message = "안녕하세요";
+console.log(message);
+message = "중복 선언에도 문제가 없지";
+console.log(message);
+console.log(message);
+*/
 
 // 02_함수 레벨 스코프
 var i = 0;
 for (var i = 0; i < 10; i++) { }
 console.log(i); // 10
 
+/* 프로그램 동작 시
 // 엔진이 해석을 다음과 같이 한다
-// var i;
-// var i;
-// i = 0;
+var i;
+var i;
+i = 0;
 
-// for (i = 0; i < 10; i++) { }
-// console.log(i);
+for (i = 0; i < 10; i++) { }
+console.log(i);
+*/
 
+// 호이스팅의 선언부 
 console.log(test); // undefined
 test = "반가워요";
 console.log(test); // 반가워요
